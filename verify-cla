@@ -2,9 +2,6 @@
 
 import os, re, subprocess, sys
 
-if os.environ.get('TRAVIS_PULL_REQUEST') != 'false':
-    sys.exit(0)
-
 contribdir = os.path.dirname(os.path.realpath(__file__))
 
 with open(contribdir+'/CONTRIBUTORS') as f:
