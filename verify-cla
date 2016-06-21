@@ -2,6 +2,9 @@
 
 import os, re, subprocess, sys
 
+if os.environ.get('TRAVIS_PULL_REQUEST') != 'false':
+    sys.exit(0)
+
 contribdir = os.path.dirname(os.path.realpath(__file__))
 
 with open(contribdir+'/CONTRIBUTORS') as f:
@@ -26,7 +29,7 @@ else:
 # CONTRIBDIR=$(dirname "$0")
 # CONTRIBUTORS=$(sed -e 's/^.*<\(.*\)>.*$/\1/' "$CONTRIBDIR/CONTRIBUTORS" | sort | uniq)
 
-# if [ "${TRAVIS_PULL_REQUEST}" != "false" ]; then
+# if [ "${}" != "false" ]; then
     # PRCONTRIBUTORS=$(git log --format=%ae | grep -v '^$' | sort | uniq)
     # echo $CONTRIBUTORS
     # echo $PRCONTRIBUTORS
