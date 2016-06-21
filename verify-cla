@@ -21,17 +21,3 @@ if len(missing) == 0:
 else:
     print "Unkown contributors: " + ', '.join(missing)
     sys.exit(-1)
-
-
-
-# set -eu
-
-# CONTRIBDIR=$(dirname "$0")
-# CONTRIBUTORS=$(sed -e 's/^.*<\(.*\)>.*$/\1/' "$CONTRIBDIR/CONTRIBUTORS" | sort | uniq)
-
-# if [ "${}" != "false" ]; then
-    # PRCONTRIBUTORS=$(git log --format=%ae | grep -v '^$' | sort | uniq)
-    # echo $CONTRIBUTORS
-    # echo $PRCONTRIBUTORS
-    # false
-# fi
