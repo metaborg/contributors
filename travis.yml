@@ -1,0 +1,2 @@
+install: git clone https://github.com/metaborg/contributors.git /tmp/metaborg-contributors
+script: /tmp/metaborg-constributors/verify-cla
