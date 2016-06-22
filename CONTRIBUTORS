@@ -1,4 +1,8 @@
-# Contributors
+## Contributors
+#
+# Everyone in this list must have signed a Contributor License
+# Agreement. Please keep this list in alphabetical order.
+
 Eelco Visser <e.visser@tudelft.nl>
 Eelco Visser <eelcovis@gmail.com>
 Eelco Visser <visser@acm.org>
@@ -6,6 +10,12 @@ Gabriel Konat <gabrielkonat@gmail.com>
 Hendrik van Antwerpen <hendrik@van-antwerpen.net>
 Vlad Vergu <v.vergu@gmail.com>
 
-# Bots and services
-GitHib <noreply@github.com> # for PR merge commits
-metaborgbot <> # buildfarm
+## Bots and services
+#
+# Some commits originate from bots and services. Their email addresses
+# can be listed here. Make sure to add a comment to every email,
+# indicating which service uses it.
+
+GitHub <noreply@github.com> # GitHub PR merge commits
+metaborgbot <> # http://buildfarm.metaborg.org
+
