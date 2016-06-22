@@ -4,21 +4,27 @@ import os, re, subprocess, sys
 
 contribdir = os.path.dirname(os.path.realpath(__file__))
 
-def normalize(email):
-    return re.sub(r'^.*<(.+)>$',r'\1',email)
+def normalize_email(email):
+    return re.sub(r'^.*<(.+)>$',r'\1',email).lower()
+
+def read_emails(lines):
+    return { normalize_email(email): email for email in map(str.strip,lines) if email and email[0] != '#' }
 
 with open(contribdir+'/CONTRIBUTORS') as f:
-    contributors = { normalize(email) for email in f.read().splitlines() if email.strip() }
+    contributors = read_emails(f.read().splitlines())
 
 git = subprocess.Popen(['git','log','--format=%an <%ae>%n%cn <%ce>'],
                        stdout=subprocess.PIPE)
-prcontributors = { normalize(email) for email in git.stdout.read().splitlines() if email.strip() }
+committers = read_emails(git.stdout.read().splitlines())
 
-missing = prcontributors.difference(contributors)
+missing = [ fullname for email, fullname in committers.iteritems() if email not in contributors ]
 
-if len(missing) == 0:
-    print "All contributors are known."
-else:
-    print "Unkown contributors:"
-    print '\n'.join(["* %s" % email for email in missing])
+if len(missing) != 0:
+    print >>sys.stderr, '\n'.join([
+        "The following committers are not known contributors:",
+        '\n'.join(["* %s" % email for email in sorted(missing, key=str.lower)]),
+        "To become a known contributor for MetaBorg projects, you must sign a CLA.",
+        "See https://spoofax.readthedocs.io/en/latest/source/dev/contribute.html",
+        "for more information on how to do this.",
+    ])
     sys.exit(-1)
