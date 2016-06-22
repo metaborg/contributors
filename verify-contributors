@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-import os, re, subprocess, sys
+import errno, os, re, subprocess, sys
 
 contribdir = os.path.dirname(os.path.realpath(__file__))
 
@@ -8,7 +8,8 @@ def normalize_email(email):
     return re.sub(r'^.*<(.+)>$',r'\1',email).lower()
 
 def read_emails(lines):
-    return { normalize_email(email): email for email in map(str.strip,lines) if email and email[0] != '#' }
+    emails = { email.split('#')[0].strip() for email in lines }
+    return { normalize_email(email): email for email in emails if email }
 
 with open(contribdir+'/CONTRIBUTORS') as f:
     contributors = read_emails(f.read().splitlines())
@@ -27,4 +28,4 @@ if len(missing) != 0:
         "See https://spoofax.readthedocs.io/en/latest/source/dev/contribute.html",
         "for more information on how to do this.",
     ])
-    sys.exit(-1)
+    sys.exit(errno.EPERM)
