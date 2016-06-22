@@ -1,0 +1,24 @@
+#!/usr/bin/env python
+
+import os, re, subprocess, sys
+
+contribdir = os.path.dirname(os.path.realpath(__file__))
+
+def normalize(email):
+    return re.sub(r'^.*<(.+)>$',r'\1',email)
+
+with open(contribdir+'/CONTRIBUTORS') as f:
+    contributors = { normalize(email) for email in f.read().splitlines() if email.strip() }
+
+git = subprocess.Popen(['git','log','--format=%an <%ae>%n%cn <%ce>'],
+                       stdout=subprocess.PIPE)
+prcontributors = { normalize(email) for email in git.stdout.read().splitlines() if email.strip() }
+
+missing = prcontributors.difference(contributors)
+
+if len(missing) == 0:
+    print "All contributors are known."
+else:
+    print "Unkown contributors:"
+    print '\n'.join(["* %s" % email for email in missing])
+    sys.exit(-1)
