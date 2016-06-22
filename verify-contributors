@@ -25,7 +25,7 @@ if len(missing) != 0:
         "The following committers are not known contributors:",
         '\n'.join(["* %s" % email for email in sorted(missing, key=str.lower)]),
         "To become a known contributor for MetaBorg projects, you must sign a CLA.",
-        "See https://spoofax.readthedocs.io/en/latest/source/dev/contribute.html",
-        "for more information on how to do this.",
+        "See https://github.com/metaborg/contributors for more information on how",
+        "to do this.",
     ])
     sys.exit(errno.EPERM)
