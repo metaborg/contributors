@@ -11,16 +11,16 @@ Project and its users; it does not change your rights to use your own
 Contributions for any other purpose.
 
 If you have not already done so, please complete and sign, then scan
-and email a PDF file of this Agreement to info@metaborg.org. Please
+and email a PDF file of this Agreement to e.visser@tudelft.nl. Please
 read this document carefully before signing and keep a copy for your
 records.
 
-| Full name               | |
-| Public name (optional)  | |
-| Mailing Address         | |
-| Country                 | |
-| E-mail                  | |
-| Telephone (optional)    | |
+Full name:<br/>
+Public name (optional):<br/>
+Mailing Address:<br/>
+Country:<br/>
+E-mail:<br/>
+Telephone (optional):<br/>
 
 You accept and agree to the following terms and conditions for Your
 present and future Contributions submitted to the Project. In return,
@@ -119,5 +119,5 @@ right, title, and interest in and to Your Contributions.
    which you become aware that would make these representations
    inaccurate in any respect.
 
-| Date      | |
-| Signature | |
+Place and date:<br/>
+Signature:</br>
