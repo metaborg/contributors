@@ -20,11 +20,11 @@ and email a PDF file of this Agreement to e.visser@tudelft.nl. Please
 read this document carefully before signing and keep a copy for your
 records.
 
-Corporation name:
-Corporation address:
-Point of Contact:
-E-mail:
-Telephone (optional):
+Corporation name:<br/>
+Corporation address:<br/>
+Point of Contact:<br/>
+E-mail:<br/>
+Telephone (optional):<br/>
 
 You accept and agree to the following terms and conditions for Your
 present and future Contributions submitted to the Project. In return,
