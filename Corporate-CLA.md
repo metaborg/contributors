@@ -16,15 +16,15 @@ submitted by its designated employees to the Project, and to grant
 copyright and patent licenses thereto.
 
 If you have not already done so, please complete and sign, then scan
-and email a PDF file of this Agreement to info@metaborg.org. Please
+and email a PDF file of this Agreement to e.visser@tudelft.nl. Please
 read this document carefully before signing and keep a copy for your
 records.
 
-| Corporation name     | |
-| Corporation address  | |
-| Point of Contact     | |
-| E-mail               | |
-| Telephone (optional) | |
+Corporation name:
+Corporation address:
+Point of Contact:
+E-mail:
+Telephone (optional):
 
 You accept and agree to the following terms and conditions for Your
 present and future Contributions submitted to the Project. In return,
@@ -118,12 +118,11 @@ right, title, and interest in and to Your Contributions.
    Contributions on behalf of the Corporation, or to the Corporation's
    Point of Contact with the Project.
 
-| Title       | |
-| Corporation | |
-| Date        | |
-| Signature   | |
+Place and date:<br/>
+Title:<br/>
+Corporation:<br/>
+Signature:<br/>
 
 ## List of designated employees
 
 *NB: authorization is not tied to particular Contributions.*
-
