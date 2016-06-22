@@ -10,14 +10,12 @@ your protection as a Contributor as well as the protection of the
 Project and its users; it does not change your rights to use your own
 Contributions for any other purpose.
 
-If you have not already done so, please complete and sign, then scan
-and email a PDF file of this Agreement to e.visser@tudelft.nl. Please
-read this document carefully before signing and keep a copy for your
-records.
+Please read this document carefully before signing and keep a copy for
+your records.
 
 Full name:<br/>
 Public name (optional):<br/>
-Mailing Address:<br/>
+Mailing address:<br/>
 Country:<br/>
 E-mail:<br/>
 Telephone (optional):<br/>

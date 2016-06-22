@@ -15,13 +15,12 @@ submit Contributions to the Project, to authorize Contributions
 submitted by its designated employees to the Project, and to grant
 copyright and patent licenses thereto.
 
-If you have not already done so, please complete and sign, then scan
-and email a PDF file of this Agreement to e.visser@tudelft.nl. Please
-read this document carefully before signing and keep a copy for your
-records.
+Please read this document carefully before signing and keep a copy for
+your records.
 
 Corporation name:<br/>
-Corporation address:<br/>
+Mailing address:<br/>
+Country:<br/>
 Point of Contact:<br/>
 E-mail:<br/>
 Telephone (optional):<br/>
@@ -119,8 +118,8 @@ right, title, and interest in and to Your Contributions.
    Point of Contact with the Project.
 
 Place and date:<br/>
+Name:</br/>
 Title:<br/>
-Corporation:<br/>
 Signature:<br/>
 
 ## List of designated employees
